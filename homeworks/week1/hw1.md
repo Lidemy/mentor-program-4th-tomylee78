@@ -36,7 +36,7 @@
 
 1. 使用`git status`，確認完成作業後的版本狀態，應該會發現有修改的作業檔未commit
 2. 使用`git commit -am "第一週作業繳交"`，將修改完的作業add並commit
-3. 使用`push origin week1`，將作業上傳到GitHub
+3. 使用`git push origin week1`，將作業上傳到GitHub
 4. 前往GitHub頁面，可以發現在網頁中輸入作業完成的標題字樣和內容(問題或小心得)，最後按下Create pull request
 5. 複製GitHub中，Pull Request的Conversation網址，在作業平台中選擇作業列表→新增作業→選擇繳交的作業週次→貼上上面的那個PR連結
 6. 勾選「確認已經檢查過作業，有完成需求」和「確認已經看過當週的自我檢討並修正錯誤」，最後按下送出完成繳交
