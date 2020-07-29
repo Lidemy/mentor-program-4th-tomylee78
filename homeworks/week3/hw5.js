@@ -54,23 +54,6 @@ function solve(n) {
                 }
             }
         }
-        /* const A = BigInt(result[0]);
-        const B = BigInt(result[1]);
-        if (A === B) {
-            console.log('DRAW');
-        } else if (A > B) {
-            if (result[2] === 1) {
-                console.log('A');
-            } else if (result[2] === -1) {
-                console.log('B');
-            }
-        } else if (B > A) {
-            if (result[2] === 1) {
-                console.log('B');
-            } else if (result[2] === -1) {
-                console.log('A');
-            }
-        } */
     }
 }
 

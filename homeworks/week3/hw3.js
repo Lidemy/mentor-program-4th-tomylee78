@@ -23,6 +23,7 @@ function solve(n) {
                 // 當數字可以被不是1或自己的數整除時，他就不是質數
                 if ((temp % x === 0) && x !== 1 && x !== temp) {
                     isPrime = false;
+                    break;
                 }
             }
             if (isPrime) {
