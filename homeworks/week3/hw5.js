@@ -16,7 +16,7 @@ function solve(n) {
         const result = n[i + 1].split(' ');
 
         const A = result[0];
-        const B = result[0];
+        const B = result[1];
 
         if (A === B) { // 內容都一樣就是平手
             console.log('DRAW');
