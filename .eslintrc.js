@@ -22,6 +22,7 @@ module.exports = {
   rules: {
       "no-console": "off",
       'linebreak-style': ["error", "windows"],
-      "indent": ["error",  4]
+      indent: "off",
+      //'comma-dangle': ["error", { "objects": "never"}]
   },
 };
