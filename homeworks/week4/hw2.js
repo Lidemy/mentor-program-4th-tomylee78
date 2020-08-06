@@ -9,7 +9,7 @@ function booksProcess(tag) {
         case 'list':
             request('https://lidemy-book-store.herokuapp.com/books?_limit=20', (error, response, body) => { // 發送伺服器規範的HTTP API GET請求
                 const json = JSON.parse(body);
-                for (let i = 0; i < 20; i += 1) {
+                for (let i = 0; i < json.length; i += 1) {
                     console.log(`${i + 1} ${json[i].name}`);
                 }
             });
