@@ -4,7 +4,6 @@ const request = require('request');// node.js¤º«Ø¼ÒÀÀClientºÝµo¥XHTTP requestªº¨
 request('https://lidemy-book-store.herokuapp.com/books?_limit=10', (error, response, body) => { // µo°e¦øªA¾¹³W½dªºHTTP API GET½Ð¨D
     const json = JSON.parse(body);
     console.log('JSON®æ¦¡ªºª«¥ó¡G');
-    console.log(json);
 
     for (let i = 0; i < 10; i += 1) {
         console.log(`${i + 1} ${json[i].name}`);

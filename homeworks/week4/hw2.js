@@ -15,9 +15,9 @@ function booksProcess(tag) {
             });
             break;
         case 'read':
-            request('https://lidemy-book-store.herokuapp.com/books?_limit=20', (error, response, body) => { // 發送伺服器規範的HTTP API GET請求
+            request(`https://lidemy-book-store.herokuapp.com/books/${process.argv[3]}`, (error, response, body) => { // 發送伺服器規範的HTTP API GET請求
                 const json = JSON.parse(body);
-                console.log(`ID ${process.argv[3]}:${json[process.argv[3]].name}`);
+                console.log(`ID ${process.argv[3]}:${json.name}`);
             });
             break;
         case 'delete':
