@@ -1,4 +1,8 @@
+﻿<<<<<<< HEAD
+﻿const request = require('request');
+=======
 const request = require('request');
+>>>>>>> 744bb1428a263f17705c9150e2d4a681b1daf0cb
 const args = process.argv;
 const API_ENDPOINT = 'https://restcountries.eu/rest/v2';
 
@@ -24,4 +28,4 @@ request(`${API_ENDPOINT}/name/${name}`, (err, res, body) => {
     console.log('貨幣：' + data[i].currencies[0].code);
     console.log('國碼：' + data[i].callingCodes[0]);
   }
-}) 
+})
