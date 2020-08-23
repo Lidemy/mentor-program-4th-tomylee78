@@ -3,40 +3,38 @@
 }
 
 .formbox {
-    max-width:645px;
-    flex-direction:column;
-    margin:0 auto 126px;
+    max-width: 645px;
+    flex-direction: column;
+    margin: 0 auto 126px;
 }
-
-
 
 nav {
     background: #fad312;
-    height:8px;
-    margin-top:121px;
+    height: 8px;
+    margin-top: 121px;
 }
 
-.formMain{
-    background:#FFFFFF;
+.formMain {
+    background: #FFFFFF;
 }
 
-.formMain > div, .formMain > input, .formMain > p {
-    margin-left:40px;
+    .formMain > div, .formMain > input, .formMain > p {
+        margin-left: 40px;
+    }
+
+.formMain__title {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 54px;
 }
 
-.formMain__title{
-    font-size:36px;
-    font-weight:bold;
-    padding-top:54px;
-}
-
-.info{
-    line-height:1.5em;
+.info {
+    line-height: 1.5em;
 }
 
 .redText {
     color: #e74149;
-    font-size:16px;
+    font-size: 16px;
 }
 
 .quest, .anything {
@@ -44,27 +42,27 @@ nav {
     font-size: 20px;
 }
 
-.quest::after {
-    content: " *";
-    color: #e74149;
+    .quest::after {
+        content: " *";
+        color: #e74149;
+    }
+
+.select {
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.select{
-    flex-direction:column;
-    cursor:pointer;
-}
-
-#no1{
-    margin-bottom:24px;
+#no1 {
+    margin-bottom: 24px;
 }
 
 .anything + p {
-    font-size:14px;
+    font-size: 14px;
 }
 
-.anything + p + input {
-    margin-top:24px;
-}
+    .anything + p + input {
+        margin-top: 24px;
+    }
 
 .submit {
     display: block;
@@ -73,13 +71,13 @@ nav {
     padding: 13px 32px;
     cursor: pointer;
     border-radius: 3px;
-    border:0;
+    border: 0;
 }
 
-.submit + p {
-    font-size:14px;
-    padding-bottom:35px;
-}
+    .submit + p {
+        font-size: 14px;
+        padding-bottom: 35px;
+    }
 
 footer {
     background: black;
