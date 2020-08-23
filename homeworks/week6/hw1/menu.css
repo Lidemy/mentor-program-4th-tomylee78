@@ -2,13 +2,13 @@
     box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
 }
 
-.navbar .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 84px;
-    background: white;
-}
+    .navbar .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 84px;
+        background: white;
+    }
 
 .wrapper {
     max-width: 1280px;
@@ -30,74 +30,74 @@
     font-size: 18px;
 }
 
-.navbar__list li {
-    margin-left: 12px;
-    border-radius: 8px;
-    transition: background 0.1s;
-}
-
-.navbar__list li.action, .navbar__list li:hover {
-    background: #ff7286;
-}
-
-    .navbar__list li a {
-        display: block;
-        text-decoration: none;
-        color: black;
-        padding: 12px 24px;
+    .navbar__list li {
+        margin-left: 12px;
+        border-radius: 8px;
+        transition: background 0.1s;
     }
 
-.navbar__list li a:hover,
-.navbar__list li.action a {
-    color: white;
-}
+        .navbar__list li.action, .navbar__list li:hover {
+            background: #ff7286;
+        }
 
-.welcomImage{
-    position:relative;
+        .navbar__list li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 12px 24px;
+        }
+
+            .navbar__list li a:hover,
+            .navbar__list li.action a {
+                color: white;
+            }
+
+.welcomImage {
+    position: relative;
     height: 350px;
-    background:url(./welcom.png) ;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background: url(./welcom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.welcomImage::after {
-    content:"";
-    position:absolute;
-    background:rgba(0, 0, 0, 0.2);
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-}
+    .welcomImage::after {
+        content: "";
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
-.welcomImage h1{
-    color:white;
-    margin:0;
-    position:absolute;
-    top:50%;
-    left:50%;
-    z-index:2;
-    transform:translate(-50%, -50%);    
-}
+    .welcomImage h1 {
+        color: white;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
 
-.introduction, .menu, .forum, .whereAmI {
+.introduction, .menu, .forum, .where-am-i {
     text-align: center;
     margin: 80px auto 68px;
 }
 
-.introduction h2, .menu h2, .forum h2, .whereAmI h2 {
-    display: inline-block;
-    border-left: 15px solid #a3dea2;
-    margin: 0;
-    padding-left: 17px;
-    font-size: 36px;
-}
+    .introduction h2, .menu h2, .forum h2, .where-am-i h2 {
+        display: inline-block;
+        border-left: 15px solid #a3dea2;
+        margin: 0;
+        padding-left: 17px;
+        font-size: 36px;
+    }
 
-.introduction p {
-    line-height: 2em;
-    margin: 39px 0px 68px 0px;
-}
+    .introduction p {
+        line-height: 2em;
+        margin: 39px 0px 68px 0px;
+    }
 
 .button {
     border-radius: 10px;
@@ -113,25 +113,25 @@
     background-color: #a8e8e1;
 }
 
-.button__oderInfo {
+.button__oder-info {
     background-color: #f9f9b5;
     margin-left: 23px;
 }
 
-.imageBox{
-    margin-top:36px;
-    display:flex;
+.image-box {
+    margin-top: 36px;
+    display: flex;
 }
 
-.imageBox__imgItem {
-    width:25%
+.image-box__img-item {
+    width: 25%
 }
 
-.imageBox__imgItem img {
-    width: 100%
-}
+    .image-box__img-item img {
+        width: 100%
+    }
 
-.forum__boxGroup {
+.forum__box-group {
     display: flex;
     margin-top: 98px;
     justify-content: center;
@@ -140,11 +140,11 @@
 .forum__box {
     border: solid 1px #c7e5ec;
     position: relative;
-    width:33%;
-    margin:0 8px;
+    width: 33%;
+    margin: 0 8px;
 }
 
-.forum__photoSample {
+.forum__photo-sample {
     width: 105px;
     height: 105px;
     background-size: contain;
@@ -168,48 +168,47 @@
 
 
 .forum__name {
-    align-self:center;
-    margin-top:60px;
-    font-size:16px;
+    align-self: center;
+    margin-top: 60px;
+    font-size: 16px;
 }
 
-.forum__message{
-    
-    margin:23px 12px;
+.forum__message {
+    margin: 23px 12px;
 }
 
-.whereAmI h2{
-    margin-bottom:16px;
+.where-am-i h2 {
+    margin-bottom: 16px;
 }
 
 .footer__top {
     background: #e8efee;
-    display:flex;
-    justify-content:space-between;
-    padding:18px 100px 18px 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 100px 18px 100px;
 }
 
 .footer__left p, .footer__right div + div {
     font-size: 14px;
     color: #484848;
-    line-height:2em;
+    line-height: 2em;
 }
 
-.footer__right{
-    margin-left:24px;
+.footer__right {
+    margin-left: 24px;
 }
 
-.footer__right div:nth-child(1) {
-    color: #489846;
-    font-size:36px;
-}
+    .footer__right div:nth-child(1) {
+        color: #489846;
+        font-size: 36px;
+    }
 
 .footer__bottom {
     background: #35564b;
-    padding:15px;
-    color:white;
-    text-align:center;
-    font-size:16px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
 }
 
 @media (max-width:768px) {
@@ -222,58 +221,58 @@
 
     .navbar__list {
         width: 100%;
-        display:flex;
+        display: flex;
     }
 
-    .navbar__list li{
-        flex: 1;
-        margin-left: 0;
-        border-radius: 0;
-        text-align: center;
-    }
+        .navbar__list li {
+            flex: 1;
+            margin-left: 0;
+            border-radius: 0;
+            text-align: center;
+        }
 
-    .navbar__list li a{
-        margin-left: 0px;
-        border-radius: 0px;
-    }
+            .navbar__list li a {
+                margin-left: 0px;
+                border-radius: 0px;
+            }
 
-    .button__oderInfo {
+    .button__oder-info {
         margin-left: 0px;
         margin-top: 16px;
     }
 
-    .imageBox {
+    .image-box {
         flex-direction: column;
     }
 
-    .imageBox__imgItem {
+    .image-box__img-item {
         width: 100%
     }
 
-    .forum__boxGroup {
-        flex-direction:column;
+    .forum__box-group {
+        flex-direction: column;
     }
 
     .forum__box {
         border: solid 1px #c7e5ec;
         position: relative;
-        width: 100%;
-        margin: 0 8px 80px;
+        width: 97%;
+        margin: 10px 8px 80px 10px;
     }
 
-    .forum{
-        margin:80px auto 0px;
+    .forum {
+        margin: 80px auto 0px;
     }
 
-    .whereAmI {
-        margin:0px;
+    .where-am-i {
+        margin: 0px;
     }
 
-    .footer__top{
-        flex-direction:column-reverse;
+    .footer__top {
+        flex-direction: column-reverse;
     }
 
-    .footer__right{
-        margin-left:0px;
+    .footer__right {
+        margin-left: 0px;
     }
 }

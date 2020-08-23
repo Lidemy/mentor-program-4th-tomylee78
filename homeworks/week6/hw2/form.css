@@ -14,15 +14,15 @@ nav {
     margin-top: 121px;
 }
 
-.formMain {
+.form-main {
     background: #FFFFFF;
 }
 
-    .formMain > div, .formMain > input, .formMain > p {
+    .form-main > div, .form-main > input, .form-main > p {
         margin-left: 40px;
     }
 
-.formMain__title {
+.form-main__title {
     font-size: 36px;
     font-weight: bold;
     padding-top: 54px;

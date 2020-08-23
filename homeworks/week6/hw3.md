@@ -31,6 +31,10 @@
 - border指的是元素的外框線調本身
 - padding則是元素向內推的距離(和本體content之間的距離)
 - 儘管實際CSS顯示相同，但其實可能是用不同的margin、border、padding參數所做出來的效果，而在CSS標籤語法含有繼承及覆蓋的特性，很有可能眼前的效果是從其他class繼承來的樣式
+- 特別留意預設值在CSS設定`width`跟`height`時，他的值會作用在content當中，然而這會造成如果增加了`border`或`padding`時，會影響整體的物件大小，進而擠壓到左右兩邊其他物件的排版，而一般人在討論物件的大小時，是連同border、padding在內的整個物件大小在討論，所以計算上會變得很困難
+- 這時候我們可以使用`box-sizeing`這個屬性，好設定在CSS設定的寬高究竟是否需囊括border、padding
+- 如果沒有宣告的話，預設`box-sizeing`的值會是`content-box`，代表CSS設定的寬高只會限制content的大小而已
+- 而如果設定`box-sizeing`的值是`border-box`時，寬高就會將border、padding囊括進去，他會動態的去壓縮內部的content空間，來符合整體的寬高限制
 
 ## 請問 display: inline, block 跟 inline-block 的差別是什麼？
 
