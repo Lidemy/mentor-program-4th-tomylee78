@@ -1,0 +1,279 @@
+﻿.navbar {
+    box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+}
+
+.navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    background: white;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+.navbar__title {
+    font-size: 36px;
+    font-family: Questrial-Regular;
+    color: #489846;
+}
+
+.navbar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.navbar__list li {
+    margin-left: 12px;
+    border-radius: 8px;
+    transition: background 0.1s;
+}
+
+.navbar__list li.action, .navbar__list li:hover {
+    background: #ff7286;
+}
+
+    .navbar__list li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 12px 24px;
+    }
+
+.navbar__list li a:hover,
+.navbar__list li.action a {
+    color: white;
+}
+
+.welcomImage{
+    position:relative;
+    height: 350px;
+    background:url(./welcom.png) ;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.welcomImage::after {
+    content:"";
+    position:absolute;
+    background:rgba(0, 0, 0, 0.2);
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.welcomImage h1{
+    color:white;
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:2;
+    transform:translate(-50%, -50%);    
+}
+
+.introduction, .menu, .forum, .whereAmI {
+    text-align: center;
+    margin: 80px auto 68px;
+}
+
+.introduction h2, .menu h2, .forum h2, .whereAmI h2 {
+    display: inline-block;
+    border-left: 15px solid #a3dea2;
+    margin: 0;
+    padding-left: 17px;
+    font-size: 36px;
+}
+
+.introduction p {
+    line-height: 2em;
+    margin: 39px 0px 68px 0px;
+}
+
+.button {
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3e613d;
+    cursor: pointer;
+    padding: 65px 80px;
+}
+
+.button__order {
+    background-color: #a8e8e1;
+}
+
+.button__oderInfo {
+    background-color: #f9f9b5;
+    margin-left: 23px;
+}
+
+.imageBox{
+    margin-top:36px;
+    display:flex;
+}
+
+.imageBox__imgItem {
+    width:25%
+}
+
+.imageBox__imgItem img {
+    width: 100%
+}
+
+.forum__boxGroup {
+    display: flex;
+    margin-top: 98px;
+    justify-content: center;
+}
+
+.forum__box {
+    border: solid 1px #c7e5ec;
+    position: relative;
+    width:33%;
+    margin:0 8px;
+}
+
+.forum__photoSample {
+    width: 105px;
+    height: 105px;
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.forum__photo1 {
+    background: url(./h1.png) no-repeat;
+}
+
+.forum__photo2 {
+    background: url(./h2.png) no-repeat;
+}
+
+.forum__photo3 {
+    background: url(./h3.png) no-repeat;
+}
+
+
+.forum__name {
+    align-self:center;
+    margin-top:60px;
+    font-size:16px;
+}
+
+.forum__message{
+    
+    margin:23px 12px;
+}
+
+.whereAmI h2{
+    margin-bottom:16px;
+}
+
+.footer__top {
+    background: #e8efee;
+    display:flex;
+    justify-content:space-between;
+    padding:18px 100px 18px 100px;
+}
+
+.footer__left p, .footer__right div + div {
+    font-size: 14px;
+    color: #484848;
+    line-height:2em;
+}
+
+.footer__right{
+    margin-left:24px;
+}
+
+.footer__right div:nth-child(1) {
+    color: #489846;
+    font-size:36px;
+}
+
+.footer__bottom {
+    background: #35564b;
+    padding:15px;
+    color:white;
+    text-align:center;
+    font-size:16px;
+}
+
+@media (max-width:768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    .navbar__list {
+        width: 100%;
+        display:flex;
+    }
+
+    .navbar__list li{
+        flex: 1;
+        margin-left: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .navbar__list li a{
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+
+    .button__oderInfo {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+    .imageBox {
+        flex-direction: column;
+    }
+
+    .imageBox__imgItem {
+        width: 100%
+    }
+
+    .forum__boxGroup {
+        flex-direction:column;
+    }
+
+    .forum__box {
+        border: solid 1px #c7e5ec;
+        position: relative;
+        width: 100%;
+        margin: 0 8px 80px;
+    }
+
+    .forum{
+        margin:80px auto 0px;
+    }
+
+    .whereAmI {
+        margin:0px;
+    }
+
+    .footer__top{
+        flex-direction:column-reverse;
+    }
+
+    .footer__right{
+        margin-left:0px;
+    }
+}
