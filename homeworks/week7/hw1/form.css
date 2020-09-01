@@ -1,0 +1,95 @@
+﻿body {
+    background: #f0f0f0;
+}
+
+.formbox {
+    max-width:645px;
+    flex-direction:column;
+    margin:0 auto 126px;
+}
+
+nav {
+    background: #fad312;
+    height:8px;
+    margin-top:121px;
+}
+
+.form-main{
+    background:#FFFFFF;
+}
+
+.form-main > div, .form-main > input, .form-main > p {
+    margin-left:40px;
+}
+
+.form-main__title{
+    font-size:36px;
+    font-weight:bold;
+    padding-top:54px;
+}
+
+.info{
+    line-height:1.5em;
+}
+
+.redText {
+    color: #e74149;
+    font-size:16px;
+}
+
+.quest, .anything {
+    margin: 55px auto 20px;
+    font-size: 20px;
+}
+
+.quest::after {
+    content: " *";
+    color: #e74149;
+}
+
+.select{
+    flex-direction:column;
+    cursor:pointer;
+}
+
+#no1{
+    margin-bottom:24px;
+}
+
+.anything + p {
+    font-size:14px;
+}
+
+.anything + p + input {
+    margin-top:24px;
+}
+
+.submit {
+    display: block;
+    margin-top: 55px;
+    background: #fad312;
+    padding: 13px 32px;
+    cursor: pointer;
+    border-radius: 3px;
+    border:0;
+}
+
+.submit + p {
+    font-size:14px;
+    padding-bottom:35px;
+}
+
+footer {
+    background: black;
+    box-sizing: border-box;
+    font-size: 13px;
+    height: 60px;
+    color: #999999;
+    text-align: center;
+    line-height: 60px;
+}
+
+.error {
+    color: red;
+    margin-top: 8px;    
+}
