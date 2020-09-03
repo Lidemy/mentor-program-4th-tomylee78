@@ -1,0 +1,300 @@
+.paper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1024px;
+    margin: 60px auto;
+    background: #FFFDE7;
+    box-shadow: 2px 2px 6px #cccccc;
+}
+
+.title {
+    text-align: center;
+    font-size: 60px;
+    color: #189BA3;
+    font-weight: bold;
+    font-family: cursive;
+    margin: 30px;
+}
+
+.pushpin-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #189BA3;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    box-shadow: 3px 3px 4px #cccccc;
+}
+
+.pushpin-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #189BA3;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    box-shadow: 3px 3px 4px #cccccc;
+}
+
+.input-box {
+    background: none;
+    width: 80%;
+    border: inherit;
+    margin: 0px auto 20px;
+    cursor: text;
+    font-size: 24px;
+    color: #189BA3;
+}
+
+    .input-box::-webkit-input-placeholder {
+        font-size: 20px;
+        color: rgba(0,0,0,0.3);
+    }
+
+    .input-box:focus {
+        outline: none;
+        animation-name: btn-line;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+.list-box-group {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.list-box {
+    width: 100%;
+    justify-content: left;
+    margin: 0px 0px 30px;
+}
+
+.list-box__checkbox {
+    float: left;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #189BA3;
+    background: none;
+    border-radius: 5px;
+    margin-right: -4px;
+    cursor: pointer;
+}
+
+.list-box__checkbox__clicked {
+    border: 2px solid rgba(24,155,163,0.4);
+}
+
+    .list-box__checkbox__clicked:before {
+        content: "";
+        position: absolute;
+        transform: rotate(45deg);
+        background: rgba(24,155,163,0.4);
+        top: 68%;
+        width: 10px;
+        height: 2px;
+    }
+
+    .list-box__checkbox__clicked:after {
+        content: "";
+        position: absolute;
+        transform: rotate(-45deg);
+        background: rgba(24,155,163,0.4);
+        top: 48%;
+        left: 17%;
+        width: 25px;
+        height: 2px;
+    }
+
+.list-box__content {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 25px;
+    vertical-align: super;
+    color: #189BA3;
+}
+
+
+.list-box__content__clicked {
+    text-decoration: line-through;
+    color: rgba(24,155,163,0.4);
+}
+
+.list-box__checkbox__point {
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    top: -40px;
+    left: -12px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    animation-name: point-box;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+    .list-box__checkbox__point:after {
+        content: '';
+        position: absolute;
+        top: 27px;
+        left: 15px;
+        width: 0px;
+        height: 0px;
+        border-top: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid transparent;
+        animation-name: point;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+.list-box__cancel {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+    .list-box__cancel:before {
+        content: "";
+        position: absolute;
+        transform: rotate(45deg);
+        background: #189BA3;
+        top: 50%;
+        width: 25px;
+        height: 2px;
+    }
+
+    .list-box__cancel:after {
+        content: "";
+        position: absolute;
+        transform: rotate(-45deg);
+        background: #189BA3;
+        top: 50%;
+        width: 25px;
+        height: 2px;
+    }
+
+.list-box__cancel__clicked {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+    .list-box__cancel__clicked:before {
+        content: "";
+        position: absolute;
+        transform: rotate(45deg);
+        background: rgba(24,155,163,0.4);
+        top: 50%;
+        width: 25px;
+        height: 2px;
+    }
+
+    .list-box__cancel__clicked:after {
+        content: "";
+        position: absolute;
+        transform: rotate(-45deg);
+        background: rgba(24,155,163,0.4);
+        top: 50%;
+        width: 25px;
+        height: 2px;
+    }
+
+.list-box__cancel__point, .list-box__cancel__clicked__point {
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    top: -35px;
+    left: -11px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    animation-name: point-box;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+    .list-box__cancel__point:after, .list-box__cancel__clicked__point:after {
+        content: '';
+        position: absolute;
+        top: 27px;
+        left: 15px;
+        width: 0px;
+        height: 0px;
+        border-top: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid transparent;
+        animation-name: point;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+
+@keyframes btn-line {
+    0% {
+        border-bottom: 0px solid rgba(24,155,163,0);
+        margin: 0px auto 20px;
+    }
+
+    50% {
+        border-bottom: 1px solid rgba(24,155,163,0.5);
+        margin: 0px auto 19px;
+    }
+
+    100% {
+        border-bottom: 2px solid rgba(24,155,163,1);
+        margin: 0px auto 18px;
+    }
+}
+
+@keyframes point-box {
+    0% {
+        background: rgba(24,155,163,0);
+    }
+
+    50% {
+        background: rgba(24,155,163,0.5);
+    }
+
+    100% {
+        background: rgba(24,155,163,1);
+    }
+}
+
+@keyframes point {
+    0% {
+        border-top: 8px solid rgba(24,155,163,0);
+    }
+
+    50% {
+        border-top: 8px solid rgba(24,155,163,0.5);
+    }
+
+    100% {
+        border-top: 8px solid rgba(24,155,163,1);
+    }
+}
