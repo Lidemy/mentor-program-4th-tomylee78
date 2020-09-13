@@ -1,0 +1,271 @@
+﻿.navbar {
+    box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+}
+
+.navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    background: white;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+.wrapper-FAQ {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+.navbar__title {
+    font-size: 36px;
+    font-family: Questrial-Regular;
+    color: #489846;
+}
+
+.navbar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.navbar__list li {
+    margin-left: 12px;
+    border-radius: 8px;
+    transition: background 0.1s;
+}
+
+.navbar__list li.action, .navbar__list li:hover {
+    background: #ff7286;
+}
+
+.navbar__list li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 24px;
+}
+
+.navbar__list li a:hover,
+.navbar__list li.action a {
+    color: white;
+}
+
+
+
+.lottery-background {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: url(./games-bn.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.lottery-background.result-1 {
+    background: url(./1.jpg) no-repeat center center;
+    height: 800px;
+    background-size: cover;
+}
+
+.lottery-background.result-2 {
+    background: url(./2.jpg) no-repeat center center;
+    height: 800px;
+    background-size: cover;
+}
+
+.lottery-background.result-3 {
+    background: url(./3.jpg) no-repeat center center;
+    height: 800px;
+    background-size: cover;
+}
+
+.lottery-background.result-0 {
+    background: black no-repeat center center;
+    height: 800px;
+    background-size: cover;
+}
+
+.lottery-resul__content {
+    font-size: 36px;
+    color: black;
+}
+
+.lottery-resul__content.GG {
+    color: white;
+}
+
+.lottery-result {
+    display: flex;
+    flex-direction: column;
+    margin-top:190px;
+}
+
+.lottery-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 500px;
+    height: auto;
+    margin: 55px 15px 150px;
+    background: white;
+    border-radius:16px;
+}
+
+.lottery-information.hide, .lottery-result.hide {
+    display: none;
+}
+
+.lottery-title {
+    color: #5ec1b6;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.lottery-box {
+    display: flex;
+    margin: 44px 20px 0px;
+    align-items:center;
+}
+
+.lottery-box__title {
+    width: 120px;
+}
+
+.lottery-box__content {
+    width: 100%;
+    letter-spacing:1px;
+    line-height:1.5em;
+}
+
+.button, .button-back {
+    background: #e62a45;
+    border-radius:8px;
+    color:white;
+    margin:50px 50px 24px;
+    height:55px;
+    width:auto;
+    border:none;
+    cursor:pointer;
+    transition:all 0.3s;
+}
+
+.button:focus, .button-back:focus {
+    outline: none;
+}
+
+.button:hover, .button-back:hover {
+    margin: 50px 40px 24px;
+    background: #e62a80;
+}
+
+
+
+
+
+
+
+
+
+.footer__top {
+    background: #e8efee;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 100px 18px 100px;
+}
+
+.footer__left p, .footer__right div + div {
+    font-size: 14px;
+    color: #484848;
+    line-height: 2em;
+}
+
+.footer__right {
+    margin-left: 24px;
+}
+
+    .footer__right div:nth-child(1) {
+        color: #489846;
+        font-size: 36px;
+    }
+
+.footer__bottom {
+    background: #35564b;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media (max-width:768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px;
+    }
+
+    .navbar__list {
+        width: 100%;
+        display: flex;
+    }
+
+        .navbar__list li {
+            flex: 1;
+            margin-left: 0;
+            border-radius: 0;
+            text-align: center;
+        }
+
+            .navbar__list li a {
+                margin-left: 0px;
+                border-radius: 0px;
+            }
+
+    .button__oder-info {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+    .image-box {
+        flex-direction: column;
+    }
+
+    .image-box__img-item {
+        width: 100%
+    }
+
+    .forum__box-group {
+        flex-direction: column;
+    }
+
+    .forum__box {
+        border: solid 1px #c7e5ec;
+        position: relative;
+        width: 97%;
+        margin: 10px 8px 80px 10px;
+    }
+
+    .forum {
+        margin: 80px auto 0px;
+    }
+
+    .where-am-i {
+        margin: 0px;
+    }
+
+    .footer__top {
+        flex-direction: column-reverse;
+    }
+
+    .footer__right {
+        margin-left: 0px;
+    }
+}
