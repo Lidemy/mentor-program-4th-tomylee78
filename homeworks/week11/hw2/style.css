@@ -1,0 +1,632 @@
+﻿* {
+    margin:0;
+    padding:0;
+}
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #787878;
+}
+
+a:visited {
+    color: #787878;
+}
+
+strong > a:visited {
+    color: black;
+}
+
+.error {
+    margin-top:10px;
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+
+.navbar {
+    background: white;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #787878;
+}
+
+.navbar-left {
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.navbar-left__title {
+    font-size: 28px;
+    color: #333333;
+}
+
+.navbar-left__list {
+    margin-left: 20px;
+}
+
+.navbar-right {
+    margin:15px 0 15px 90px;
+}
+
+.navbar-right__list {
+    margin-right: 20px;
+}
+
+.welcom-image {
+    box-sizing: border-box;
+    width: auto;
+    height: 241px;
+    background-image: linear-gradient(to top, #000000, #434343);
+    color: white;
+    text-align: center;
+    padding-top: 76px;
+}
+
+.welcom-image__title {
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 76px;
+}
+
+.subtitle {
+    margin-top: 26px;
+    font-size: 14px;
+}
+
+/*主區域*/
+
+.wrapper{
+    max-width:920px;
+    margin:-30px auto 100px;
+    background:white;
+    padding-top:3px;
+}
+
+.blog-box, .blog-edit {
+    border: solid 1px #9a9a9a;
+    margin: 10px;
+    padding: 24px 30px 30px;
+}
+
+.blog-box__title-box {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.admin {
+    margin-bottom: 0px;
+    padding: 5px 15px 5px
+}
+
+.blog-box__title {
+    text-shadow: 1.4px 1.4px 2px #efefef;
+    font-size: 16px;
+    margin-right:15px;
+}
+
+.blog-box__edit-form {
+    margin-left: auto;
+    padding: 5px 12px;
+}
+
+.blog-box__edit-form.admin {
+    margin-left: 0;
+}
+
+.blog-box__edit {
+    margin-left: auto;
+    border: solid 1px #a8a8a8;
+    color: #a8a8a8;
+    padding: 5px 12px;
+    cursor: pointer;
+    background: white;
+}
+
+.blog-box__delete-form {
+
+}
+
+.blog-box__delete {
+    border: solid 1px #a8a8a8;
+    margin-left: 15px;
+    color: #a8a8a8;
+    padding: 5px 12px;
+    cursor: pointer;
+    background: white;
+}
+
+.blog-box__info {
+    display: flex;
+    background: #eeeeee;
+    color: #8f8f8f;
+    padding: 11px 22px;
+    margin-bottom: 17px;
+    flex-wrap:wrap;
+}
+
+.blog-box__info.admin {
+    padding:2px 0 2px 13px;
+    margin-bottom: 0px;
+    margin-left:auto;
+}
+
+.img-icon-clock {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+.img-icon-file {
+    width: 16px;
+    height:16px;
+    margin-right: 10px;
+}
+
+.blog-box__info__content{
+    margin-right:13px;
+}
+
+
+.blog-box__preview {
+    line-height: 1.5em;
+    white-space: pre-line;
+    margin-bottom:36px;
+}
+
+.blog-box__readme {
+    border: solid 1px #737373;
+    padding: 12px 17px;
+    width: max-content;
+    background: white;
+    cursor: pointer;
+}
+
+
+/*文章編輯頁面*/
+
+.blog-edit__title-info {
+    text-shadow: 1.4px 1.4px 2px #efefef;
+    font-size: 20px;
+    margin-bottom:25px;
+}
+
+.blog-edit__title {
+    padding: 12px;
+    width: 96.6%;
+    margin-bottom: 15px;
+}
+
+.blog-edit__edit-box {
+    width: 100%;
+    max-width:838px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 5px;
+    outline: none;
+    margin-bottom:25px;
+}
+
+.blog-edit__post {
+    border: solid 1px #737373;
+    padding: 12px 17px;
+    width: max-content;
+    margin-left:auto;
+    display:block;
+    cursor:pointer;
+    background:white;
+}
+
+/*登入頁面*/
+
+.login-wrapper {
+    max-width:500px
+}
+
+.blog-login {
+    border: solid 1px #9a9a9a;
+    margin: 10px;
+    padding: 24px 60px 30px;
+}
+
+.blog-login__title {
+    text-shadow: 1.4px 1.4px 2px #efefef;
+    font-size: 20px;
+    margin: 15px auto 25px;
+    text-shadow: 1.4px 1.4px 2px #efefef;
+    font-size: 32px;
+    text-align:center;
+}
+
+.blog-login__info {
+    font-size: 14px;
+    margin-left:20px;
+    margin-bottom:15px;
+}
+
+.blog-login__input {
+    margin-bottom: 15px;
+    width:100%;
+}
+
+.blog-login__post {
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    padding: 22px 0;
+    margin-top: 50px;
+    background-image: linear-gradient(to top, #000000, #434343);
+}
+
+
+
+
+
+
+.logined, .register {
+    position: fixed;
+    font-size: 36px;
+    background: #0043ff;
+    color: wheat;
+    padding: 10px 20px;
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -92px;
+    top: 100px;
+    animation-name: logined;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.sign-in > form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login-text > input {
+    outline: none;
+    border: solid 1px #84ced8;
+}
+
+.login-text > input ~ input {
+    margin-left: 15px;
+}
+
+.sign-in > form > input[type=text], .sign-in > form > input[type=password], .comment-input > input {
+    outline: none;
+    border: solid 1px #84ced8;
+}
+
+
+
+
+.login-button > input:hover, .edit:hover, .submit:hover {
+    background: #0089ff;
+}
+
+.sign-in > form > input[type=submit].logout {
+    background: #ff0076;
+    border-radius: 10px;
+    transition: background 0.3s;
+    padding: 10px 30px;
+    text-align: center;
+    color: white;
+    margin: 10px 0px 10px 10px;
+}
+
+.sign-in > form > input[type=submit].logout:hover {
+    background: #da0068;
+}
+
+.login-button > a, .cancle, .delete {
+    background: #ff0076;
+    border-radius: 10px;
+    transition: background 0.3s;
+    padding: 9px 29px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: double 3px #806363;
+    box-sizing: border-box;
+    box-shadow: 1.4px 1.4px 6px 0 #6d5353;
+    margin-left: 15px;
+    word-break: keep-all;
+    transition: all 0.3s;
+}
+
+.login-button > a:hover, .cancle:hover, .delete:hover {
+    background: #da0068;
+}
+
+
+BG {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #e0d7c9;
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1.4px 1.4px 6px 0 #97a2a0;
+}
+
+h1 {
+    text-align:center;
+}
+
+
+
+/*///////// 留言板輸入框 ///////////////*/
+
+.comment-input {
+    display: flex;
+    margin: 10px auto;
+    max-width: 730px;
+    width:100%;
+    flex-direction:column;
+    border-bottom: 2px solid #908575;
+}
+
+.comment-input__info {
+    margin: 0px 20px 15px;
+}
+
+.nickname {
+    color: #9c4e4e;
+}
+
+.point {
+    font-size: 18px;
+    font-weight: bold;
+    color: #735656;
+}
+
+.comment-input > form {
+    display: flex;
+    flex-direction:column;
+}
+
+.comment-input > form > * {
+    margin-bottom: 20px;
+}
+
+
+
+input[data-value=register] {
+    width: 200px;
+}
+
+.comment-input > form > input[type=submit] {
+    width: 100px;
+    background: #ab9f8c;
+    border-radius: 6px;
+    transition: background 0.3s;
+    padding: 10px 30px;
+    text-align: center;
+    color: white;
+    outline: none;
+}
+
+.comment-input > form > input[type=submit]:hover {
+    background: #7d7567;
+}
+
+.error{
+    font-size:24px;
+    color:red;
+    font-weight:bold;
+}
+
+/*////////// 留言板顯示框 //////////////*/
+
+.comment-output {
+    display: flex;
+    margin: 10px 0;
+    flex-direction:column;
+    width:100%;
+    max-width: 720px;  
+}
+
+.message-box{
+    display:flex;
+    height:auto;
+    margin:0 30px 20px;
+}
+
+.message-box__avatar {
+    background: url(./avatar.jpg);
+    background-size: contain;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 2px #cc5a5a;
+}
+
+.message-box__content{
+    display:flex;
+    flex-direction:column;
+    margin:4px 0 0 20px;
+    flex:1;
+}
+
+.message-box__content > .edit {
+    margin: 5px 0 0 0;
+    width: 56px;
+}
+
+.message-box__content__title {
+    word-break: break-word;
+    font-weight: bold;
+    color: #8a5745;
+    font-size:16px;
+    line-height: 1.5em;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.message-box__content > p {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.message-box__content__account {
+    margin-left: 10px;
+    color: #2153af;
+}
+
+.create-time {
+    margin-left: 10px;
+    color: #808080;
+}
+
+/*////////// 留言板編輯框 //////////////*/
+
+.content-box-select > .edit{
+    margin-left:0;
+}
+
+.content-box-select-form{
+    display:inline-block;
+}
+
+.content-box-form {
+    max-width: 470px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    margin: 10px 0;
+}
+
+.content-box-form__click {
+    flex-direction: row;
+}
+.content-box-form__click > * {
+    display:inline-block;
+    margin:10px 10px;
+}
+
+/*/////////// 帳號頁面 /////////////*/
+
+.info-box {
+    margin: 5px 20px;
+}
+
+.info-box__title {
+    color: #7b807e;
+    font-weight: bold;
+}
+
+.info-box__content-box {
+    display:flex;
+    margin:0 0 10px 10px;
+    max-width:400px;
+}
+
+.info-box__content-box__form {
+    display: flex;
+    flex-grow:0;
+    flex-direction:row;
+    margin:10px 0;
+}
+
+.info-box__content-box__form > * {
+    flex-grow: 0;
+    outline:none;
+}
+
+.edit {
+    padding: 5px 10px;
+    margin-left: 20px;
+    width:56px;
+}
+
+.submit {
+    padding: 5px 10px;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.cancle, .delete {
+    padding: 5px 10px;
+    outline:none;
+}
+
+.hide {
+    display:none;
+}
+
+/*//////////// 分頁 ////////////*/
+
+.page-info {
+    text-align: center;
+    color: #735656;
+    font-weight: bold;
+}
+
+.page-box{
+    display:flex;
+}
+
+.page-button {
+    background: #b79e85;
+    margin: 5px;
+    color: white;
+    padding: 5px;
+    outline: none;
+    text-decoration:none;
+}
+
+/*//////////// 編輯權限 ////////////*/
+
+.submit.authority {
+    text-align: center;
+    border: double 3px #806363;
+    box-sizing: border-box;
+    box-shadow: 1.4px 1.4px 6px 0 #6d5353;
+    margin-left: 15px;
+}
+
+.select-authority, .cancle.authority, .submit.authority {
+    margin-top: 18px;
+}
+/*/////////// footer /////////////*/
+.footer__bottom {
+    background: #323232;
+    padding: 11px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+@keyframes logined {
+    0% {
+        background: #0043ff;
+        color: #f5deb3;
+    }
+
+    50% {
+        background: #0043ff;
+        color: #f5deb3;
+    }
+
+    100% {
+        background: #0043ff00;
+        color: #f5deb300;        
+        visibility: hidden;
+    }
+}
