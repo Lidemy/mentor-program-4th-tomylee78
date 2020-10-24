@@ -19,7 +19,11 @@
     }
     
     $pageLimit = 5; // 每頁顯示筆數
-    $allPage = intval($count / $pageLimit) + 1; // 總留言頁面數
+    if($count % $pageLimit === 0){
+        $allPage = intval($count / $pageLimit); // 總留言頁面數
+    } else {
+        $allPage = intval($count / $pageLimit) + 1; // 總留言頁面數
+    }
     empty($_GET['page']) ? $page = 0 : $page = intval($_GET['page'] - 1); // 設定第幾頁
     $displayPage = $page + 1;
     $page = $page * $pageLimit;
