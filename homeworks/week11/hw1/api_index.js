@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => { // 讓HTML都載入後才�
     function Start() { // 初始取得留言板內容
         getComnentAPI(comments, 'http://localhost/w11_1_comment/api_comments.php', (data) => { // 向API索取留言資料
             // console.log(data.api_comments[3].comments);
-            const item = data.api_comments[3].comments; // 留言資訊
+            const item = data.api_comments.comments; // 留言資訊
             for (let i = 0; i < item.length; i += 1) {
                 const element = document.createElement('div');
                 element.classList.add('message-box');
