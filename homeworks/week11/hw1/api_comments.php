@@ -18,11 +18,6 @@
         $count = $row['Count']; // 總留言數
     }
 
-    // 將資料放入陣列中
-    array_push($api_comments, array(
-        'totalCount'=> $count, // 總頁數
-    ));
-
     // 撈取留言內容
     $pageLimit = 5; // 每頁顯示筆數
     $allPage = intval($count / $pageLimit) + 1; // 總留言頁面數
@@ -42,7 +37,7 @@
 
     // 將資料放入陣列中
     while($row = $resault->fetch_assoc()){
-        array_push($comment, array(
+        array_push($comment, array( // 以陣列的型式存入
             'ID'=> $row['CMID'], // 留言編號
             'account' => $row['Account'], // 帳號
             'nickname' => $row['Nickname'], // 留言編號
@@ -51,15 +46,11 @@
         ));
     }
 
-    array_push($api_comments, array(
-            'page'=> $displayPage, // 目前頁數
-        ),
-         array(
-            'allPage'=> $allPage, // 總留言頁面數
-        ),
-        array(
-            'comments'=> $comment, // 所有留言
-        )
+    $api_comments = array( // 以物件的型式存入
+        'totalCount'=> $count, // 總頁數
+        'page'=> $displayPage, // 目前頁數
+        'allPage'=> $allPage, // 總留言頁面數
+        'comments'=> $comment, // 所有留言
     );
 
     $jsonshell = array(

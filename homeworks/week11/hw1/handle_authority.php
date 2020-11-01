@@ -1,7 +1,19 @@
 <?php
+    session_start();
     require_once('./conn.php');
     require_once('./Utils.php');
     $jsonshell = array(); // 預計要回傳的JSON陣列
+
+    if(empty($_SESSION['account']) || empty($_SESSION['authority'])){ // 當權限不符時，將錯誤代碼傳回主頁
+        array_push($jsonshell, array(
+            'status' => 'error',
+            'message' => '權限不符',
+        ));
+        $response = json_encode($jsonshell); //轉譯成JSON格式字串
+        echo $response;
+        exit();
+    }
+
     if(empty($_POST['account']) || empty($_POST['newAuthority'])){ // 當輸入框沒正確輸入時，將錯誤代碼傳回主頁
         array_push($jsonshell, array(
             'status' => 'error',
