@@ -19,13 +19,13 @@
     $sql = "SELECT * FROM AKIHA_todolist WHERE list_id = ?;";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param('s', $list_id); // 解決SQL Injection的問題
-    $resault = getSQLData($stmt); // 取得資料
+    $result = getSQLData($stmt); // 取得資料
 
     // 如果查無訊息
-    if(!$result = $stmt->execute()){
+    if($result === 0){
         $jsonshell = array(
             'status' => 'error',
-            'message' => '查無訊息，請檢察清單編號是否正確',
+            'message' => '查無訊息，請確認清單編號是否正確',
         );
         $response = json_encode($jsonshell); //轉譯成JSON格式字串
         response ($response); // 將結果回傳給客戶端
@@ -33,7 +33,7 @@
     }
 
     // 將資料放入陣列中
-    while($row = $resault->fetch_assoc()){
+    while($row = $result->fetch_assoc()){
         array_push($itemList, array( // 以陣列的型式存入
             'status' => $row['is_completed'], // 項目狀態
             'item' => $row['item'], // 項目本體

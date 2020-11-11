@@ -48,16 +48,6 @@
         </section>
         <section class="todolist-output container">
             <div class="list-group item-list">
-              <div type="button" class="list-group-item list-group-item-action d-flex align-items-center edit">
-                <span class="badge badge-success mr-1 status" data-value="1">已完成</span>
-                <p class="my-auto text-break ml-2 item">HIHI   作業清單111</p>
-                <span class="badge badge-secondary ml-auto delete-item">X</span>
-              </div>
-              <div type="button" class="list-group-item list-group-item-action d-flex align-items-center edit">
-                <span class="badge badge-warning mr-1 status" data-value="0">未完成</span>
-                <p class="my-auto text-break ml-2 item">HIHI   作業清單222</p>
-                <span class="badge badge-secondary ml-auto delete-item">X</span>
-              </div>
             </div>
             <div class="list-group list-group-horizontal text-center">
                 <button type="button" class="list-group-item list-group-item-action item-count" disabled>共5項</button>

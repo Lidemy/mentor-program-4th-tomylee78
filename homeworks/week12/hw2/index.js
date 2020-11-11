@@ -242,10 +242,10 @@ $(document).ready(() => {
                 'list-id': $('#list-id').val(), // 清單編號
             },
         }).done((response) => {
-            // console.log(response);
             const data = JSON.parse(response); // 將JSON字串轉換成物件
             if (data.status === 'error') { // 錯誤處裡
-                console.log(data.message);
+                // console.log(data.message);
+                showAlert(data.message);// 顯示告警訊息
                 return;
             }
 
