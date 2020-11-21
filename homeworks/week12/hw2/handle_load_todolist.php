@@ -40,8 +40,6 @@
         ));
     }
 
-
-
     $jsonshell = array(
         'itemList'=> $itemList, // 所有待辦項目
     );

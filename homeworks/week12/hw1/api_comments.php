@@ -2,7 +2,6 @@
     require_once('./conn.php');
     require_once('./utils.php'); // 客製化函式庫
 
-    $api_comments = array(); // 外層(未上JSON外殼)
     $comment = array(); // 放留言內容
 
     // 偵測傳遞留言板金鑰以及要顯示的留言數
@@ -23,7 +22,7 @@
     $stmt = $conn->prepare($sql);
     $result = getSQLData($stmt); // 取得資料
     if($result === false || $result === 0){
-        exit('GG' . $conn->error); // 【伺服器錯誤，請聯絡管理員檢查伺服器】
+        exit('伺服器錯誤，請聯絡管理員檢查伺服器' . $conn->error); // 【伺服器錯誤，請聯絡管理員檢查伺服器】
     } else {
         $row = $result->fetch_assoc();
         $count = $row['Count']; // 總留言數
@@ -45,7 +44,7 @@
     if($resault === 0){
         $jsonshell = array(
             'status' => 'error',
-            'message' => '查無訊息，請檢察留言板金鑰是否正確',
+            'message' => '查無訊息，請檢查留言板金鑰是否正確',
         );
         $response = json_encode($jsonshell); //轉譯成JSON格式字串
         response ($response); // 將結果回傳給客戶端

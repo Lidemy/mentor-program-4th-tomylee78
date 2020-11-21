@@ -4,6 +4,7 @@ $(document).ready(() => {
     // API位置變數
     const apiSite = 'http://localhost/w12_1_api_comment/';
     let limit = 5; // 顯示留言比數
+    const addLimit = 5; // 按下「顯示更多」時所增加的留言筆數
     const siteKey = 'w12_1'; // 顯示留言比數
 
     // 純文字轉換
@@ -63,7 +64,7 @@ $(document).ready(() => {
 
     // 點選更多留言
     $('.comment-output').on('click', '.loadmore', () => {
-        limit += limit;
+        limit += addLimit;
         getComments(); // 取得留言內容
     });
 
